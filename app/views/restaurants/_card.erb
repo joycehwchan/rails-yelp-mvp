@@ -1,0 +1,9 @@
+<div class="col-sm-6 mb-4">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title"><%= restaurant.name %></h5>
+      <p class="card-text"><%= restaurant.category.capitalize %></p>
+      <%= link_to 'See more', restaurant_path(restaurant), class: 'btn btn-dark' %>
+    </div>
+  </div>
+</div>
