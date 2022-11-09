@@ -1,4 +1,3 @@
-<h1><%#= @restaurant %></h1>
 <h1><%= @restaurant.name %></h1>
 <p><%= @restaurant.category %></p>
 <small>Address: <%= @restaurant.address %></small>
@@ -13,7 +12,6 @@
     <%= link_to 'Add Review', new_restaurant_review_path(@restaurant), class: 'btn btn-dark float-end' %>
   </div>
 </div>
-
 <% @restaurant.reviews.each do |review| %>
   <div class="card my-2">
     <div class="card-body">
